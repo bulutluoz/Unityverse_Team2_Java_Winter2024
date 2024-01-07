@@ -2,23 +2,9 @@ package day05_switchStatements_stringManipulations;
 
 import java.util.Scanner;
 
-public class C11_soru {
+public class C12_Soru {
 
     public static void main(String[] args) {
-
-        /*
-            Bir soruda birden fazla sart varsa
-            bagimsiz if cumleleri veya if - else if cumleleriyle soruyu cozebiliriz
-
-            bagimsiz if cumleleri ile yapmanin avantaji:
-            tum hatalari tek seferde soyler
-
-            if - else if cumleleriyle yaparsak
-            sadece 1 hatayi yazdirir,
-            ama avantaji
-            eger en sonda hicbir hata yoksa, sifre basarili yazdirabiliriz
-
-         */
 
         // SORU : kullanicidan bir mail alin
         //        - mail @ icermiyorsa "gecersiz mail"
@@ -39,15 +25,18 @@ public class C11_soru {
 
         //        - mail @gmail.com icermiyorsa, "mail gmail olmali"
 
-        if (!girilenMail.contains("@gmail.com")){
+        else if (!girilenMail.contains("@gmail.com")){
             System.out.println("mail gmail olmali");
         }
 
         //        - mail @gmail.com ile bitmiyorsa, "mailde yazim hatasi var"
 
-        if (!girilenMail.endsWith("@gmail.com")){
+        else if (!girilenMail.endsWith("@gmail.com")){
             System.out.println("mailde yazim hatasi var");
         }
 
+        else {
+            System.out.println("Sifreniz basarili olarak kaydedildi");
+        }
     }
 }
