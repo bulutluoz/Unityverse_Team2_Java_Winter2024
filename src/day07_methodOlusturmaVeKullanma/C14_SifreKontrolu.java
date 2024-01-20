@@ -20,7 +20,7 @@ public class C14_SifreKontrolu {
 
             boolean sifreKontrolSonucu = C08_SifreKontrolu.sifreKontrolEt(sifre);
 
-            if (sifreKontrolSonucu == true){
+            if (sifreKontrolSonucu){ // sifreKontrolSonucu == true
                 sifreIstemeyeDevamEt = false;
                 System.out.println("Sifreniz basariyla kaydedildi");
             }
