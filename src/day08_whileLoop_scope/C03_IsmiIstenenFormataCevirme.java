@@ -11,7 +11,25 @@ public class C03_IsmiIstenenFormataCevirme {
         // Eger kullanici birden fazla isim girerse, her ismin ilk harfi buyuk olmali
         // ornek : ali mert ==> Ali Mert , AYSE CAN => Ayse Can
 
-        String isim = "ALI KEMAL";
+        String isim = "tarik kemal canli";
+
+        // sadece ismin duzenlenmis halini yazdirmak istersek
+
+        System.out.println(ismiDuzenle(isim));  // Ali Kemal Candan
+
+        // 18.satirda atama yapmadan sadece yazdirdigimiz icin, isim variable'nin degeri degismedi
+
+        System.out.println(isim); // ALI KEMAL CANDAN
+
+        // Eger isim variable'inin degeri istenen haliyle kaydolsun diyorsak, atama yapmaliyiz
+
+        isim = ismiDuzenle(isim);
+
+        System.out.println("26.satirdan sonra isim kalici olarak degisti : " + isim);
+
+    }
+
+    public static String ismiDuzenle(String isim){
 
         int index = 0;
         String duzenlenmisIsim ="";
@@ -31,6 +49,6 @@ public class C03_IsmiIstenenFormataCevirme {
             index++;
         }
 
-        System.out.println(duzenlenmisIsim);
+        return duzenlenmisIsim;
     }
 }
