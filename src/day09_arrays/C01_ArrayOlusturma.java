@@ -81,9 +81,9 @@ public class C01_ArrayOlusturma {
 
         // arr4[5] = 10; // ArrayIndexOutOfBoundsException
 
-
         // arr4'un son elementini silin
 
+        // array'deki method'lari kullanarak silme yapamadik
 
 
     }
