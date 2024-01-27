@@ -15,6 +15,8 @@ public class C05_ArananSayininAdediniYazdirma {
         kullanimAdediyazdir(arr,3); // Aradiginiz 3, array' de 4 adet kullanilmis
 
         // array'deki tum elemanlarin ortalamasini yazdiran bir method olusturun
+        elemanlarinOrtalamasiniYazdir(arr);
+        // Array'de bulunan 13 elemanin ortalamasi : 3.923076923076923
 
     }
 
@@ -42,6 +44,18 @@ public class C05_ArananSayininAdediniYazdirma {
         int elemanSayisi = 0;
         double elemanlarinToplami = 0;
 
+
+        for (int i = 0; i < arr.length ; i++) { // outer
+            for (int j = 0; j <arr[i].length ; j++) {
+
+                elemanlarinToplami += arr[i][j];
+                elemanSayisi ++;
+            }
+        }
+
+        ortalama = elemanlarinToplami / elemanSayisi;
+
+        System.out.println("Array'de bulunan " + elemanSayisi + " elemanin ortalamasi : " + ortalama);
 
     }
 }
