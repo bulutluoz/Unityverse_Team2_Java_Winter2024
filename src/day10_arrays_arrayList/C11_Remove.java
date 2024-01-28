@@ -48,5 +48,16 @@ public class C11_Remove {
 
         System.out.println(sayilar); // [3, 6, 9]
 
+
+        List<Integer> silineceklerListesi = new ArrayList<>();
+        silineceklerListesi.add(3);
+        silineceklerListesi.add(5);
+
+        System.out.println(sayilar.removeAll(silineceklerListesi));
+        // sayilar listesi bu komut ile degisirse true,
+        // sayilar listesi degismezse, yani hic bir sayi silemediyse false doner
+
+        System.out.println(sayilar); // [6, 9]
+
     }
 }
