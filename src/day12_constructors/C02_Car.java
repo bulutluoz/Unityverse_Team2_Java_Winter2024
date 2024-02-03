@@ -10,8 +10,6 @@ public class C02_Car {
     int yil = 1900;
     int fiyat ;
 
-
-
     // Java tum class'larda default cons. olusturur
     // ama biz yil ve fiyat degerlerini girebilecegimiz
     // bir constructor istiyordsak,
@@ -28,7 +26,24 @@ public class C02_Car {
     }
 
     C02_Car(int yl, int fyt){
+        yil = yl;
+        fiyat = fyt;
+    }
 
+    C02_Car(String mrk, String mdl, int fyt){
+        marka = mrk;
+        model = mdl;
+        fiyat = fyt;
+
+    }
+
+    C02_Car(String marka, String model, String renk, int yil,int fiyat){
+
+        this.marka = marka;
+        this.model = model;
+        this.renk = renk;
+        this.yil = yil;
+        this.fiyat = fiyat;
     }
 
 
