@@ -10,7 +10,8 @@ public class C06_ConstructorCall {
 
         // constructor call icin this(parametreler)
 
-        this("Ali"); // bu class'da string parametreli constructor calissin
+        this("Ali");  // bu class'da string parametreli constructor calissin
+
         System.out.println("Parametresiz constructor calisti");
     }
 
@@ -18,10 +19,14 @@ public class C06_ConstructorCall {
         System.out.println("Parametreli constructor calisti");
     }
 
+    C06_ConstructorCall(int sayi){
+        System.out.println("Parametreli constructor calisti");
+    }
+
 
     public static void main(String[] args) {
 
-        // method1();
+        method1();
 
         C06_ConstructorCall obj = new C06_ConstructorCall();
 
