@@ -32,17 +32,17 @@ public class C09_Hastane {
            2- return type olmamalidir
      */
 
-    C09_Hastane(){
+    public C09_Hastane(){
 
     }
 
-    static String hastaneIsmi = "Yildiz Hastanesi";
-    static String bashekimIsmi = "Doktor Kemal";
-    static String hastaneAdresi = "Cankaya";
+    public static String hastaneIsmi = "Yildiz Hastanesi";
+    public static String bashekimIsmi = "Doktor Kemal";
+    public static String hastaneAdresi = "Cankaya";
 
-    String persIsmi = "Isim belirtilmedi";
-    String persTel = "Tel girilmedi";
-    String persAdres = "Adres girilmedi";
+    public String persIsmi = "Isim belirtilmedi";
+    public String persTel = "Tel girilmedi";
+    public String persAdres = "Adres girilmedi";
 
     public void C09_Hastane(){
         // naming convention'a gore method isimleri kucuk harfle baslamalidir
