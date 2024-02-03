@@ -15,6 +15,7 @@ public class C05_ArabaRunner {
         C04_Araba araba2 = new C04_Araba(2020,17500);
 
         System.out.println(araba2);
+        // Araba ozellikleri : marka='marka girilmedi', model='model girilmedi', renk='renk girilmedi', yil=2020, fiyat=10000
 
     }
 }
