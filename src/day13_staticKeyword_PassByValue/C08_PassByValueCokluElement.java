@@ -28,7 +28,7 @@ public class C08_PassByValueCokluElement {
             yeniArr[i] = 1;
         }
 
-        arr = yeniArr;
+        arr = yeniArr; // araba degisti
 
         System.out.println("method'da arr'nin son hali : " + Arrays.toString(arr));
     }
