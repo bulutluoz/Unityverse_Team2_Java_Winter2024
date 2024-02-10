@@ -19,14 +19,33 @@ public class C06_FarkliSaatleriKarsilastirma {
 
         // bir islemin ne kadar surdugunu bulalim
 
+        // baslangic ve bitis zamanlarini localTime olarak kaydedip
 
-        for (int i = 0; i <1000000 ; i++) {
 
-            for (int j = 0; j <1000000 ; j++) {
+        LocalTime baslangic = LocalTime.now();
+        System.out.println("Baslangic zamani : " + baslangic);
 
+        for (int i = 0; i <100000 ; i++) {
+
+            for (int j = 0; j <100000 ; j++) {
+                for (int k = 0; k < 10; k++) {
+
+                }
             }
         }
 
+        LocalTime bitis = LocalTime.now();
+        System.out.println("Bitis zamani : " + bitis);
+
+        //    until() ile aradaki zamani bulabiliriz
+        System.out.println(baslangic.until(bitis,ChronoUnit.SECONDS)); // 3
+
+        // toSecondOfDay
+
+        System.out.println(bitis.toSecondOfDay() - baslangic.toSecondOfDay()); // 3
+
+        // tonanoOfDay
+        System.out.println(bitis.toNanoOfDay() - baslangic.toNanoOfDay()); // 3243809000
 
 
 
