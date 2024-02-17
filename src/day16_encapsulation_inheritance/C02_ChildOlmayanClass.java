@@ -20,6 +20,7 @@ public class C02_ChildOlmayanClass {
         // obj.methodProtected();
 
         System.out.println(obj.sayiPublic);
+        obj.sayiPublic = 100;
         obj.methodPublic();
 
     }
