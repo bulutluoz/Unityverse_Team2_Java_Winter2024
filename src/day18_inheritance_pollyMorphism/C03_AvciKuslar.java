@@ -63,6 +63,28 @@ public class C03_AvciKuslar extends C02_Kuslar{
         kartal3.beslenme(); // Av etle beslenir
 
 
+        C02_Kuslar kus1 = new C02_Kuslar();
+
+        kus1.omur(); // Ha yasar ve olurler
+        kus1.solunum(); // Ku Akcigerle solunum yapar
+        kus1.cogalma(); // Ku Yumurtayla cogalirlar
+        kus1.kanat(); // Ku kanatlidirlar
+        kus1.hareket(); // Ha Hareket ederler
+        kus1.gaga(); // Ku gagalidir
+        //kus1.pence(); // CTE Aramaya Kuslar'dan baslar ve pence() bulamaz
+        kus1.beslenme(); // Ha beslenir
+
+
+        C01_Hayvanlar kus2 = new C02_Kuslar();
+
+        kus2.omur(); // Ha yasar ve olurler
+        kus2.solunum(); // Ku Akcigerle solunum yapar
+        kus2.cogalma(); // Ku Yumurtayla cogalirlar
+        // kus2.kanat(); // CTE Aramaya hayvanlar'dan baslar ve kanat() bulamaz
+        kus2.hareket(); // Ha Hareket ederler
+        // kus2.gaga(); // CTE Aramaya hayvanlar'dan baslar ve gaga() bulamaz
+        // kus2.pence(); // CTE Aramaya hayvanlar'dan baslar ve pence() bulamaz
+        kus2.beslenme(); // Ha beslenir
 
 
 
