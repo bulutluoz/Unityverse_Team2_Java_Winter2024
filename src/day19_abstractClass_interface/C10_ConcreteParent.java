@@ -6,7 +6,7 @@ public class C10_ConcreteParent {
 
     }
 
-    int sayi = 20;
+    static int sayi = 20;
     String isim = "Concrete parent";
 
 
