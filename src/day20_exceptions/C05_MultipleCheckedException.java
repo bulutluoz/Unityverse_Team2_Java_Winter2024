@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class C04_MultipleCheckedException {
+public class C05_MultipleCheckedException {
 
     public static void main(String[] args) {
 
