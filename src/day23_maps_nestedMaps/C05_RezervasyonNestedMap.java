@@ -53,5 +53,22 @@ public class C05_RezervasyonNestedMap {
                 }
          */
 
+
+        // rezervasyonun isim bilgisini yazdiralim
+
+        System.out.println(rezervasyonMap.get("firstname")); // Ahmet
+
+        // rezervasyonun totalprice bilgisini yazdiralim
+
+        System.out.println(rezervasyonMap.get("totalprice")); // 500
+
+        // rezervasyonun checkin bilgisini yazdiralim
+
+        System.out.println(rezervasyonMap.get("bookingdates"));
+        //  {checkin=2024-07-21, checkout=2024-08-10}
+
+        System.out.println(((Map<String, String>) rezervasyonMap.get("bookingdates")).get("checkin"));
+        // 2024-07-21
+
     }
 }
