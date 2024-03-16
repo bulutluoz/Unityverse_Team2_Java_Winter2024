@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class OgrenciMap {
 
-    static Map<Integer, String> ogrenciMap = new HashMap<>();
+    public static Map<Integer, String> ogrenciMap = new HashMap<>();
 
     static {
         ogrenciMap.put(101,"Ali-Can-11-H-MF");
